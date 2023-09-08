@@ -1,4 +1,5 @@
 name: path_provider_android
+publish_to: none
 description: Android implementation of the path_provider plugin.
 repository: https://github.com/flutter/packages/tree/main/packages/path_provider/path_provider_android
 issue_tracker: https://github.com/flutter/flutter/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+path_provider%22
@@ -20,7 +21,8 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  path_provider_platform_interface: ^2.1.0
+  path_provider_platform_interface: 
+    git: https://github.com/kumsumit/path_provider_platform_interface.git
 
 dev_dependencies:
   flutter_test:
