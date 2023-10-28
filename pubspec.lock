@@ -247,18 +247,19 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "5fe77a542273849f74fda6033f79dee607f83a2c"
+      resolved-ref: "651bf928de545c4bd4903d8a9515c22602874856"
       url: "https://github.com/kumsumit/path_provider_platform_interface.git"
     source: git
     version: "2.1.1"
   pigeon:
     dependency: "direct dev"
     description:
-      name: pigeon
-      sha256: "6b270420d0808903f4c2d848aa96f8c12e6275b15989270f24e552939642212f"
-      url: "https://pub.dev"
-    source: hosted
-    version: "9.2.5"
+      path: "."
+      ref: HEAD
+      resolved-ref: "44057d2a4cab2029c1b25b598bfe9bc439d4eeb9"
+      url: "https://github.com/kumsumit/pigeon.git"
+    source: git
+    version: "11.0.1"
   platform:
     dependency: transitive
     description:
@@ -498,5 +499,5 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=3.1.0-185.0.dev <4.0.0"
-  flutter: ">=3.7.0"
+  dart: ">=3.1.0 <4.0.0"
+  flutter: ">=3.13.0"

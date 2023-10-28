@@ -195,15 +195,15 @@
     },
     {
       "name": "path_provider_platform_interface",
-      "rootUri": "file:///home/sumit/.pub-cache/git/path_provider_platform_interface-5fe77a542273849f74fda6033f79dee607f83a2c/",
+      "rootUri": "file:///home/sumit/.pub-cache/git/path_provider_platform_interface-651bf928de545c4bd4903d8a9515c22602874856/",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.1"
     },
     {
       "name": "pigeon",
-      "rootUri": "file:///home/sumit/.pub-cache/hosted/pub.dev/pigeon-9.2.5",
+      "rootUri": "file:///home/sumit/.pub-cache/git/pigeon-44057d2a4cab2029c1b25b598bfe9bc439d4eeb9/",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.1"
     },
     {
       "name": "platform",
@@ -389,10 +389,10 @@
       "name": "path_provider_android",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-09-08T10:54:53.485659Z",
+  "generated": "2023-09-22T14:15:13.280481Z",
   "generator": "pub",
-  "generatorVersion": "3.1.0"
+  "generatorVersion": "3.1.2"
 }

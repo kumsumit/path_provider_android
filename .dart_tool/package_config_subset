@@ -1,7 +1,11 @@
 path_provider_platform_interface
-2.19
-file:///home/sumit/.pub-cache/git/path_provider_platform_interface-5fe77a542273849f74fda6033f79dee607f83a2c/
-file:///home/sumit/.pub-cache/git/path_provider_platform_interface-5fe77a542273849f74fda6033f79dee607f83a2c/lib/
+3.1
+file:///home/sumit/.pub-cache/git/path_provider_platform_interface-651bf928de545c4bd4903d8a9515c22602874856/
+file:///home/sumit/.pub-cache/git/path_provider_platform_interface-651bf928de545c4bd4903d8a9515c22602874856/lib/
+pigeon
+3.1
+file:///home/sumit/.pub-cache/git/pigeon-44057d2a4cab2029c1b25b598bfe9bc439d4eeb9/
+file:///home/sumit/.pub-cache/git/pigeon-44057d2a4cab2029c1b25b598bfe9bc439d4eeb9/lib/
 plugin_platform_interface
 2.19
 file:///home/sumit/.pub-cache/git/plugin_platform_interface-1d6e1c5fae93958d50ce0595ef687d8195088d21/
@@ -114,10 +118,6 @@ path
 2.12
 file:///home/sumit/.pub-cache/hosted/pub.dev/path-1.8.3/
 file:///home/sumit/.pub-cache/hosted/pub.dev/path-1.8.3/lib/
-pigeon
-2.18
-file:///home/sumit/.pub-cache/hosted/pub.dev/pigeon-9.2.5/
-file:///home/sumit/.pub-cache/hosted/pub.dev/pigeon-9.2.5/lib/
 platform
 2.12
 file:///home/sumit/.pub-cache/hosted/pub.dev/platform-3.1.0/
@@ -231,7 +231,7 @@ yaml
 file:///home/sumit/.pub-cache/hosted/pub.dev/yaml-3.1.2/
 file:///home/sumit/.pub-cache/hosted/pub.dev/yaml-3.1.2/lib/
 path_provider_android
-2.19
+3.1
 file:///home/sumit/StudioProjects/packages/packages/path_provider/path_provider_android/
 file:///home/sumit/StudioProjects/packages/packages/path_provider/path_provider_android/lib/
 sky_engine

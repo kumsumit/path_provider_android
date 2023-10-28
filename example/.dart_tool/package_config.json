@@ -101,13 +101,13 @@
       "name": "path_provider_android",
       "rootUri": "../../",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.1"
     },
     {
       "name": "path_provider_platform_interface",
-      "rootUri": "file:///home/sumit/.pub-cache/hosted/pub.dev/path_provider_platform_interface-2.1.1",
+      "rootUri": "file:///home/sumit/.pub-cache/git/path_provider_platform_interface-651bf928de545c4bd4903d8a9515c22602874856/",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.1"
     },
     {
       "name": "platform",
@@ -117,7 +117,7 @@
     },
     {
       "name": "plugin_platform_interface",
-      "rootUri": "file:///home/sumit/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.6",
+      "rootUri": "file:///home/sumit/.pub-cache/git/plugin_platform_interface-1d6e1c5fae93958d50ce0595ef687d8195088d21/",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
@@ -203,10 +203,10 @@
       "name": "path_provider_example",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-09-08T08:01:13.768262Z",
+  "generated": "2023-09-22T14:15:14.546934Z",
   "generator": "pub",
-  "generatorVersion": "3.1.0"
+  "generatorVersion": "3.1.2"
 }
