@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.3.0'
+        classpath 'com.android.tools.build:gradle:8.6.0'
     }
 }
 
@@ -29,13 +29,13 @@ android {
     compileSdk 34
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 19
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
         checkAllWarnings true
         warningsAsErrors true
-        disable 'AndroidGradlePluginVersion', 'InvalidPackage', 'GradleDependency'
+        disable 'AndroidGradlePluginVersion', 'InvalidPackage', 'GradleDependency', 'NewerVersionAvailable'
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
@@ -57,6 +57,6 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.annotation:annotation:1.7.1'
+    implementation 'androidx.annotation:annotation:1.8.2'
     testImplementation 'junit:junit:4.13.2'
 }
