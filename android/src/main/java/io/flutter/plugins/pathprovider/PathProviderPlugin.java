@@ -111,32 +111,19 @@ public class PathProviderPlugin implements FlutterPlugin, PathProviderApi {
   }
 
   private String getStorageDirectoryString(@NonNull Messages.StorageDirectory directory) {
-    switch (directory) {
-      case ROOT:
-        return null;
-      case MUSIC:
-        return "music";
-      case PODCASTS:
-        return "podcasts";
-      case RINGTONES:
-        return "ringtones";
-      case ALARMS:
-        return "alarms";
-      case NOTIFICATIONS:
-        return "notifications";
-      case PICTURES:
-        return "pictures";
-      case MOVIES:
-        return "movies";
-      case DOWNLOADS:
-        return "downloads";
-      case DCIM:
-        return "dcim";
-      case DOCUMENTS:
-        return "documents";
-      default:
-        throw new RuntimeException("Unrecognized directory: " + directory);
-    }
+      return switch (directory) {
+          case ROOT -> null;
+          case MUSIC -> "music";
+          case PODCASTS -> "podcasts";
+          case RINGTONES -> "ringtones";
+          case ALARMS -> "alarms";
+          case NOTIFICATIONS -> "notifications";
+          case PICTURES -> "pictures";
+          case MOVIES -> "movies";
+          case DOWNLOADS -> "downloads";
+          case DCIM -> "dcim";
+          case DOCUMENTS -> "documents";
+      };
   }
 
   private List<String> getPathProviderExternalStorageDirectories(

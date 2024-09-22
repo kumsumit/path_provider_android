@@ -38,10 +38,9 @@ public class Messages {
 
   @NonNull
   protected static ArrayList<Object> wrapError(@NonNull Throwable exception) {
-    ArrayList<Object> errorList = new ArrayList<Object>(3);
-    if (exception instanceof FlutterError) {
-      FlutterError error = (FlutterError) exception;
-      errorList.add(error.code);
+    ArrayList<Object> errorList = new ArrayList<>(3);
+    if (exception instanceof FlutterError error) {
+        errorList.add(error.code);
       errorList.add(error.getMessage());
       errorList.add(error.details);
     } else {
@@ -68,7 +67,7 @@ public class Messages {
 
     final int index;
 
-    private StorageDirectory(final int index) {
+    StorageDirectory(final int index) {
       this.index = index;
     }
   }
@@ -115,13 +114,12 @@ public class Messages {
         if (api != null) {
           channel.setMessageHandler(
               (message, reply) -> {
-                ArrayList<Object> wrapped = new ArrayList<Object>();
+                ArrayList<Object> wrapped = new ArrayList<>();
                 try {
                   String output = api.getTemporaryPath();
                   wrapped.add(0, output);
                 } catch (Throwable exception) {
-                  ArrayList<Object> wrappedError = wrapError(exception);
-                  wrapped = wrappedError;
+                    wrapped = wrapError(exception);
                 }
                 reply.reply(wrapped);
               });
@@ -140,13 +138,12 @@ public class Messages {
         if (api != null) {
           channel.setMessageHandler(
               (message, reply) -> {
-                ArrayList<Object> wrapped = new ArrayList<Object>();
+                ArrayList<Object> wrapped = new ArrayList<>();
                 try {
                   String output = api.getApplicationSupportPath();
                   wrapped.add(0, output);
                 } catch (Throwable exception) {
-                  ArrayList<Object> wrappedError = wrapError(exception);
-                  wrapped = wrappedError;
+                    wrapped = wrapError(exception);
                 }
                 reply.reply(wrapped);
               });
@@ -165,13 +162,12 @@ public class Messages {
         if (api != null) {
           channel.setMessageHandler(
               (message, reply) -> {
-                ArrayList<Object> wrapped = new ArrayList<Object>();
+                ArrayList<Object> wrapped = new ArrayList<>();
                 try {
                   String output = api.getApplicationDocumentsPath();
                   wrapped.add(0, output);
                 } catch (Throwable exception) {
-                  ArrayList<Object> wrappedError = wrapError(exception);
-                  wrapped = wrappedError;
+                    wrapped = wrapError(exception);
                 }
                 reply.reply(wrapped);
               });
@@ -190,13 +186,12 @@ public class Messages {
         if (api != null) {
           channel.setMessageHandler(
               (message, reply) -> {
-                ArrayList<Object> wrapped = new ArrayList<Object>();
+                ArrayList<Object> wrapped = new ArrayList<>();
                 try {
                   String output = api.getApplicationCachePath();
                   wrapped.add(0, output);
                 } catch (Throwable exception) {
-                  ArrayList<Object> wrappedError = wrapError(exception);
-                  wrapped = wrappedError;
+                    wrapped = wrapError(exception);
                 }
                 reply.reply(wrapped);
               });
@@ -215,13 +210,12 @@ public class Messages {
         if (api != null) {
           channel.setMessageHandler(
               (message, reply) -> {
-                ArrayList<Object> wrapped = new ArrayList<Object>();
+                ArrayList<Object> wrapped = new ArrayList<>();
                 try {
                   String output = api.getExternalStoragePath();
                   wrapped.add(0, output);
                 } catch (Throwable exception) {
-                  ArrayList<Object> wrappedError = wrapError(exception);
-                  wrapped = wrappedError;
+                    wrapped = wrapError(exception);
                 }
                 reply.reply(wrapped);
               });
@@ -240,13 +234,12 @@ public class Messages {
         if (api != null) {
           channel.setMessageHandler(
               (message, reply) -> {
-                ArrayList<Object> wrapped = new ArrayList<Object>();
+                ArrayList<Object> wrapped = new ArrayList<>();
                 try {
                   List<String> output = api.getExternalCachePaths();
                   wrapped.add(0, output);
                 } catch (Throwable exception) {
-                  ArrayList<Object> wrappedError = wrapError(exception);
-                  wrapped = wrappedError;
+                    wrapped = wrapError(exception);
                 }
                 reply.reply(wrapped);
               });
@@ -265,16 +258,17 @@ public class Messages {
         if (api != null) {
           channel.setMessageHandler(
               (message, reply) -> {
-                ArrayList<Object> wrapped = new ArrayList<Object>();
+                ArrayList<Object> wrapped = new ArrayList<>();
                 ArrayList<Object> args = (ArrayList<Object>) message;
-                StorageDirectory directoryArg =
+                  assert args != null;
+                  StorageDirectory directoryArg =
                     args.get(0) == null ? null : StorageDirectory.values()[(int) args.get(0)];
                 try {
-                  List<String> output = api.getExternalStoragePaths(directoryArg);
+                    assert directoryArg != null;
+                    List<String> output = api.getExternalStoragePaths(directoryArg);
                   wrapped.add(0, output);
                 } catch (Throwable exception) {
-                  ArrayList<Object> wrappedError = wrapError(exception);
-                  wrapped = wrappedError;
+                    wrapped = wrapError(exception);
                 }
                 reply.reply(wrapped);
               });
