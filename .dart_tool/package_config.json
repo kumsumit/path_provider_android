@@ -407,13 +407,13 @@
       "name": "path_provider_android",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-09-21T13:47:07.307797Z",
+  "generated": "2024-11-03T10:42:32.158633Z",
   "generator": "pub",
-  "generatorVersion": "3.5.3",
+  "generatorVersion": "3.5.4",
   "flutterRoot": "file:///home/sumit/softwares/flutter",
-  "flutterVersion": "3.24.3",
+  "flutterVersion": "3.24.4",
   "pubCache": "file:///home/sumit/.pub-cache"
 }

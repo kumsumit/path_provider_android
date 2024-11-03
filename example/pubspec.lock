@@ -144,7 +144,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "2.2.10"
+    version: "2.2.13"
   path_provider_platform_interface:
     dependency: "direct main"
     description:
@@ -265,5 +265,5 @@ packages:
     source: hosted
     version: "3.0.3"
 sdks:
-  dart: ">=3.4.0 <4.0.0"
-  flutter: ">=3.22.0"
+  dart: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.0"
