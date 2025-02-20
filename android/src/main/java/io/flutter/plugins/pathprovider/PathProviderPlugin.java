@@ -8,6 +8,7 @@ import android.content.Context;
 import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugins.pathprovider.Messages.PathProviderApi;
@@ -44,17 +45,17 @@ public class PathProviderPlugin implements FlutterPlugin, PathProviderApi {
 
   @Override
   public @Nullable String getTemporaryPath() {
-    return getPathProviderTemporaryDirectory();
+    return context.getCacheDir().getPath();
   }
 
   @Override
   public @Nullable String getApplicationSupportPath() {
-    return getApplicationSupportDirectory();
+    return PathUtils.getFilesDir(context);
   }
 
   @Override
   public @Nullable String getApplicationDocumentsPath() {
-    return getPathProviderApplicationDocumentsDirectory();
+    return PathUtils.getDataDirectory(context);
   }
 
   @Override
@@ -64,33 +65,6 @@ public class PathProviderPlugin implements FlutterPlugin, PathProviderApi {
 
   @Override
   public @Nullable String getExternalStoragePath() {
-    return getPathProviderStorageDirectory();
-  }
-
-  @Override
-  public @NonNull List<String> getExternalCachePaths() {
-    return getPathProviderExternalCacheDirectories();
-  }
-
-  @Override
-  public @NonNull List<String> getExternalStoragePaths(
-      @NonNull Messages.StorageDirectory directory) {
-    return getPathProviderExternalStorageDirectories(directory);
-  }
-
-  private String getPathProviderTemporaryDirectory() {
-    return context.getCacheDir().getPath();
-  }
-
-  private String getApplicationSupportDirectory() {
-    return PathUtils.getFilesDir(context);
-  }
-
-  private String getPathProviderApplicationDocumentsDirectory() {
-    return PathUtils.getDataDirectory(context);
-  }
-
-  private String getPathProviderStorageDirectory() {
     final File dir = context.getExternalFilesDir(null);
     if (dir == null) {
       return null;
@@ -98,44 +72,56 @@ public class PathProviderPlugin implements FlutterPlugin, PathProviderApi {
     return dir.getAbsolutePath();
   }
 
-  private List<String> getPathProviderExternalCacheDirectories() {
+  @Override
+  public @NonNull List<String> getExternalCachePaths() {
     final List<String> paths = new ArrayList<>();
-
     for (File dir : context.getExternalCacheDirs()) {
       if (dir != null) {
         paths.add(dir.getAbsolutePath());
       }
     }
-
     return paths;
   }
 
-  private String getStorageDirectoryString(@NonNull Messages.StorageDirectory directory) {
-      return switch (directory) {
-          case ROOT -> null;
-          case MUSIC -> "music";
-          case PODCASTS -> "podcasts";
-          case RINGTONES -> "ringtones";
-          case ALARMS -> "alarms";
-          case NOTIFICATIONS -> "notifications";
-          case PICTURES -> "pictures";
-          case MOVIES -> "movies";
-          case DOWNLOADS -> "downloads";
-          case DCIM -> "dcim";
-          case DOCUMENTS -> "documents";
-      };
-  }
-
-  private List<String> getPathProviderExternalStorageDirectories(
+  @Override
+  public @NonNull List<String> getExternalStoragePaths(
       @NonNull Messages.StorageDirectory directory) {
     final List<String> paths = new ArrayList<>();
-
     for (File dir : context.getExternalFilesDirs(getStorageDirectoryString(directory))) {
       if (dir != null) {
         paths.add(dir.getAbsolutePath());
       }
     }
-
     return paths;
+  }
+
+  @VisibleForTesting
+  String getStorageDirectoryString(@NonNull Messages.StorageDirectory directory) {
+    switch (directory) {
+      case ROOT:
+        return null;
+      case MUSIC:
+        return "music";
+      case PODCASTS:
+        return "podcasts";
+      case RINGTONES:
+        return "ringtones";
+      case ALARMS:
+        return "alarms";
+      case NOTIFICATIONS:
+        return "notifications";
+      case PICTURES:
+        return "pictures";
+      case MOVIES:
+        return "movies";
+      case DOWNLOADS:
+        return "downloads";
+      case DCIM:
+        return "dcim";
+      case DOCUMENTS:
+        return "documents";
+      default:
+        throw new RuntimeException("Unrecognized directory: " + directory);
+    }
   }
 }
