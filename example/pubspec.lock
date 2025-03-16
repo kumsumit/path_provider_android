@@ -144,13 +144,13 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "2.2.15"
+    version: "2.2.16"
   path_provider_platform_interface:
     dependency: "direct main"
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "04979ca2044423ac0b82f2a4fc582decc7e84e99"
+      resolved-ref: "0e399288d800499fce3b215d24f32c115830be67"
       url: "https://github.com/kumsumit/path_provider_platform_interface.git"
     source: git
     version: "2.1.2"
@@ -266,4 +266,4 @@ packages:
     version: "3.0.4"
 sdks:
   dart: ">=3.7.0-0 <4.0.0"
-  flutter: ">=3.24.0"
+  flutter: ">=3.27.0"
