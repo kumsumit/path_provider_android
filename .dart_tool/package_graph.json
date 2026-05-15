@@ -198,6 +198,11 @@
       ]
     },
     {
+      "name": "platform",
+      "version": "3.1.6",
+      "dependencies": []
+    },
+    {
       "name": "ffi",
       "version": "2.2.0",
       "dependencies": []
@@ -266,11 +271,6 @@
       "dependencies": [
         "meta"
       ]
-    },
-    {
-      "name": "platform",
-      "version": "3.1.6",
-      "dependencies": []
     },
     {
       "name": "term_glyph",
