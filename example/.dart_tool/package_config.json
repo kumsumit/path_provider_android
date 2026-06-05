@@ -59,41 +59,41 @@
       "name": "flutter",
       "rootUri": "file:///Users/amitsharan/development/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "3.9"
+      "languageVersion": "3.12"
     },
     {
       "name": "flutter_driver",
       "rootUri": "file:///Users/amitsharan/development/flutter/packages/flutter_driver",
       "packageUri": "lib/",
-      "languageVersion": "3.9"
+      "languageVersion": "3.12"
     },
     {
       "name": "flutter_test",
       "rootUri": "file:///Users/amitsharan/development/flutter/packages/flutter_test",
       "packageUri": "lib/",
-      "languageVersion": "3.9"
+      "languageVersion": "3.12"
     },
     {
       "name": "fuchsia_remote_debug_protocol",
       "rootUri": "file:///Users/amitsharan/development/flutter/packages/fuchsia_remote_debug_protocol",
       "packageUri": "lib/",
-      "languageVersion": "3.9"
+      "languageVersion": "3.12"
     },
     {
       "name": "integration_test",
       "rootUri": "file:///Users/amitsharan/development/flutter/packages/integration_test",
       "packageUri": "lib/",
-      "languageVersion": "3.9"
+      "languageVersion": "3.12"
     },
     {
       "name": "jni",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/git/jni-7f02ac81334c7ee959276d051ef722a3bb4263db/",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/git/jni-7066eb931fd304f47269120ea292c09d31f1f9d0/",
       "packageUri": "lib/",
       "languageVersion": "3.11"
     },
     {
       "name": "jni_flutter",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/git/jni_flutter-868141e96e4e546d3aecf1b8be034b3c08e548f0/",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/git/jni_flutter-1688605a05937ad49eb74626a2192291749146b0/",
       "packageUri": "lib/",
       "languageVersion": "3.11"
     },
@@ -117,9 +117,9 @@
     },
     {
       "name": "matcher",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/matcher-0.12.19",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/matcher-0.12.20",
       "packageUri": "lib/",
-      "languageVersion": "3.7"
+      "languageVersion": "3.10"
     },
     {
       "name": "material_color_utilities",
@@ -129,7 +129,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/meta-1.17.0",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/meta-1.18.2",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     },
@@ -149,13 +149,13 @@
       "name": "path_provider_android",
       "rootUri": "../../",
       "packageUri": "lib/",
-      "languageVersion": "3.11"
+      "languageVersion": "3.12"
     },
     {
       "name": "path_provider_platform_interface",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/git/path_provider_platform_interface-6f8cac470cb4572a24fe5d5007833a07abe13bcf/",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/git/path_provider_platform_interface-073777cd99f40732d075f1c4528569ceaf89bbaf/",
       "packageUri": "lib/",
-      "languageVersion": "3.11"
+      "languageVersion": "3.12"
     },
     {
       "name": "platform",
@@ -179,7 +179,7 @@
       "name": "sky_engine",
       "rootUri": "file:///Users/amitsharan/development/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "3.9"
+      "languageVersion": "3.10"
     },
     {
       "name": "source_span",
@@ -219,15 +219,15 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/test_api-0.7.10",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/test_api-0.7.12",
       "packageUri": "lib/",
-      "languageVersion": "3.7"
+      "languageVersion": "3.10"
     },
     {
       "name": "vector_math",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/vector_math-2.2.0",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/vector_math-2.4.0",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.10"
     },
     {
       "name": "vm_service",
@@ -245,12 +245,12 @@
       "name": "path_provider_example",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.9"
+      "languageVersion": "3.10"
     }
   ],
   "generator": "pub",
-  "generatorVersion": "3.11.5",
+  "generatorVersion": "3.12.1",
   "flutterRoot": "file:///Users/amitsharan/development/flutter",
-  "flutterVersion": "3.41.9",
+  "flutterVersion": "3.45.0-1.0.pre-40",
   "pubCache": "file:///Users/amitsharan/.pub-cache"
 }
